@@ -1,0 +1,23 @@
+{
+  "name": "nes_online",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yingView/nes_online.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yingView/nes_online/issues"
+  },
+  "homepage": "https://github.com/yingView/nes_online#readme",
+  "devDependencies": {
+    "jsnes": "^1.0.1",
+    "nodejs-websocket": "^1.7.2"
+  }
+}
