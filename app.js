@@ -13,6 +13,8 @@ var server = ws.createServer(function (conn) {
 			start(data);
 		} else if (data.type === 'render') {
 			render(data);
+		} else if (data.type === 'operater') {
+			operater(data);
 		}
 		// conn.sendText(str)
 	})
@@ -42,6 +44,12 @@ function render(data) {
 			data: data.data
 		}));
 	});
+}
+
+function operater(data) {
+	server.connections.forEach(function (conn) {
+		conn.sendText(JSON.stringify(data));
+	})
 }
 
 
